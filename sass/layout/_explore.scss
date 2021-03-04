@@ -1,0 +1,79 @@
+.explore-restaurant {
+  @media (max-width: 767px) {
+    @include flex-column;
+    flex-wrap: wrap;
+    background-color: $colour-bgc;
+    padding-bottom: 15%;
+    width: 100%;
+    margin: auto;
+    &__map {
+      @include flex-row;
+      justify-content: center;
+      align-items: center;
+      background-color: #ededed;
+      border-top: 0.1rem #dbdbdb solid;
+        font-weight: bold;
+      > i {
+        padding-right: 20px;
+      }
+    }
+    &-search {
+      @include flex-column;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    @include flex-column;
+    flex-wrap: wrap;
+    background-color: $colour-bgc;
+    padding-bottom: 15%;
+    width: 100%;
+    margin: auto;
+    &__map {
+      @include flex-row;
+      justify-content: center;
+      align-items: center;
+      background-color: #ededed;
+      border-top: 0.1rem #dbdbdb solid;
+      font-weight: bold;
+      > i {
+        padding-right: 20px;
+      }
+    }
+    &-search {
+      @include flex-column;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  @media (min-width: 992px) {
+    @include flex-column;
+    flex-wrap: wrap;
+    background-color: $colour-bgc;
+    padding-bottom: 15%;
+    width: 100%;
+    margin: auto;
+    &__map {
+      @include flex-row;
+      justify-content: center;
+      align-items: center;
+      background-color: #ededed;
+      border-top: 0.1rem #dbdbdb solid;
+      font-weight: bold;
+      > i {
+        padding-right: 20px;
+      }
+    }
+    &-search {
+      @include flex-column;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+    }
+  }
+}

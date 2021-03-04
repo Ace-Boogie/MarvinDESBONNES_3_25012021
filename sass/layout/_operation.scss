@@ -1,0 +1,174 @@
+.operation {
+  font-family: $font-text;
+  @media (max-width: 767px) {
+    @include flex-column;
+    justify-content: center;
+    > h2 {
+      padding-left: 5%;
+    }
+    &-container {
+      @include flex-column;
+      justify-content: center;
+      width: 80%;
+      margin: auto;
+
+      &__click {
+        @include flex-row;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px $colour-bgc solid;
+        border-radius: 25px;
+        padding: 2%;
+        margin-top: 5%;
+        background-color: $colour-bgc;
+        font-weight: bold;
+        position: relative;
+        &::before {
+          background-color: $colour-primary;
+          font-size: 15px;
+          color: $colour-white;
+          position: absolute;
+          border-radius: 60px;
+          padding: 0.2em 0.55em;
+          left: -3%;
+        }
+        &-number-1::before {
+          content: '1';
+        }
+        &-number-2::before {
+          content: '2';
+        }
+        &-number-3::before {
+          content: '3';
+        }
+        > i {
+          color: gray;
+          margin: 0 10%;
+        }
+        &:last-child > i {
+          color: $colour-primary;
+        }
+      }
+    }
+    &-container:nth-last-child(-n+2) {
+      margin-bottom: 5%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    @include flex-column;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    > h2 {
+      padding-left: 5%;
+    }
+    &-container {
+      @include flex-column;
+      justify-content: center;
+      width: 80%;
+      margin: auto;
+
+      &__click {
+        @include flex-row;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px $colour-bgc solid;
+        border-radius: 25px;
+        padding: 2%;
+        margin-top: 5%;
+        background-color: $colour-bgc;
+        font-weight: bold;
+        position: relative;
+        &::before {
+          background-color: $colour-primary;
+          font-size: 15px;
+          color: $colour-white;
+          position: absolute;
+          border-radius: 60px;
+          padding: 0.2em 0.55em;
+          left: -3%;
+        }
+        &-number-1::before {
+          content: '1';
+        }
+        &-number-2::before {
+          content: '2';
+        }
+        &-number-3::before {
+          content: '3';
+        }
+        > i {
+          color: gray;
+          margin: 0 10%;
+        }
+        &:last-child > i {
+          color: $colour-primary;
+        }
+      }
+    }
+    &-container:nth-last-child(-n+2) {
+      margin-bottom: 5%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    @include flex-column;
+    width: 100%;
+    margin: auto;
+    > h2 {
+      padding-left: 5%;
+    }
+    &-container {
+      @include flex-row;
+      justify-content: space-between;
+      width: 100%;
+      margin: auto;
+
+      &__click {
+        @include flex-row;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px $colour-bgc solid;
+        border-radius: 25px;
+        padding: 2%;
+        margin-top: 5%;
+        background-color: $colour-bgc;
+        font-weight: bold;
+        position: relative;
+        width: 50%;
+        margin-right: 3%;
+        margin-left: 3%;
+        &::before {
+          background-color: $colour-primary;
+          font-size: 15px;
+          color: $colour-white;
+          position: absolute;
+          border-radius: 60px;
+          padding: 0.2em 0.55em;
+          left: -3%;
+        }
+        &-number-1::before {
+          content: '1';
+        }
+        &-number-2::before {
+          content: '2';
+        }
+        &-number-3::before {
+          content: '3';
+        }
+        > i {
+          color: gray;
+          margin: 0 10%;
+        }
+        &:last-child > i {
+          color: $colour-primary;
+        }
+      }
+    }
+    &-container:nth-last-child(-n+2) {
+      margin-bottom: 5%;
+    }
+  }
+
+}

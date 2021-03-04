@@ -1,0 +1,91 @@
+.footer {
+  @media (max-width: 767px) {
+    width: 100%;
+    @include flex-column;
+    align-content: flex-start;
+    height: 200px;
+    background-color: $colour-bgc-footer;
+    color: $colour-white;
+    &__logo {
+      padding-left: 7%;
+      > a {
+        text-decoration: none;
+        color: $colour-white;
+      }
+    }
+    &__link {
+      margin: 1%;
+      padding-left: 7%;
+
+      > a {
+        text-decoration: none;
+        color: $colour-white;
+
+        > i {
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    @include flex-column;
+    align-content: flex-start;
+    height: 200px;
+    background-color: $colour-bgc-footer;
+    color: $colour-white;
+    width: 100%;
+    margin: auto;
+    &__logo {
+      padding-left: 7%;
+      > a {
+        text-decoration: none;
+        color: $colour-white;
+      }
+    }
+    &__link {
+      margin: 1%;
+      padding-left: 7%;
+
+      > a {
+        text-decoration: none;
+        color: $colour-white;
+
+        > i {
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    @include flex-column;
+    align-content: flex-start;
+    height: 100%;
+    background-color: $colour-bgc-footer;
+    color: $colour-white;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    &__logo {
+      padding-left: 7%;
+      > a {
+        text-decoration: none;
+        color: $colour-white;
+      }
+    }
+    &__link {
+      margin: 1%;
+      padding-left: 7%;
+
+      > a {
+        text-decoration: none;
+        color: $colour-white;
+
+        > i {
+          width: 30px;
+        }
+      }
+    }
+  }
+}

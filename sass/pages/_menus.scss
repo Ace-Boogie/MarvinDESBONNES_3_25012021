@@ -1,0 +1,27 @@
+header > .menu-new {
+  > img {
+    @include flex-row;
+    width: 100%;
+  }
+
+  &::after {
+    @include menu-new-after;
+    top: 32%;
+    @media (min-width: 768px) and (max-width: 991px) {
+      right: 42%;
+      width: 12%;
+      top: 25%;
+    }
+    @media (min-width: 992px) {
+      right: 43%;
+      width: 10%;
+      padding: 1%;
+      text-align: center;
+      top: 24%;
+    }
+  }
+}
+
+.menu-new::after {
+  @include menu-new-after;
+}

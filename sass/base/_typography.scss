@@ -1,0 +1,32 @@
+body {
+  font-family: $font-text;
+}
+
+h1 {
+  font-family: $font-logo;
+  //font-weight: 900;
+  font-size: 2rem;
+}
+
+button {
+  font-family: $font-text;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer {
+
+  &__logo {
+    font-family: $font-logo;
+    font-weight: 100;
+    font-size: 1.15em;
+  }
+
+  &__link {
+    font-family: $font-text;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}

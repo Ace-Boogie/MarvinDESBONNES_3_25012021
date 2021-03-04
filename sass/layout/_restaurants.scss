@@ -1,0 +1,198 @@
+.restaurant {
+  @media (max-width: 767px) {
+    @include flex-column;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-color: $colour-bgc;
+    > h2 {
+      padding-left: 5%;
+      font-weight: bold;
+    }
+    &-article {
+      @include flex-column;
+
+
+      &-card {
+        @include flex-column;
+        justify-content: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        position: relative;
+
+        > a {
+          text-decoration: none;
+          color: transparent;
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        &__img {
+          border-radius: 20px 20px 0 0;
+          height: 213.35px;
+          overflow: hidden;
+        }
+
+        &-info {
+          @include flex-row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 5%;
+          padding-right: 5%;
+          padding-bottom: 5%;
+          background-color: $colour-white;
+          border-radius: 0 0 20px 20px;
+          border: 1px solid $colour-white;
+
+          &__title {
+            @include flex-column;
+            position: relative;
+
+            > p {
+              position: absolute;
+              top: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    @include flex-column;
+    background-color: $colour-bgc;
+    border-radius: 20px 20px 0 0;
+    width: 70%;
+    margin: auto;
+    > h2 {
+      padding-left: 5%;
+      font-weight: bold;
+    }
+    &-article {
+      @include flex-column;
+
+
+      &-card {
+        @include flex-column;
+        justify-content: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        position: relative;
+
+        > a {
+          text-decoration: none;
+          color: transparent;
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        &__img {
+          border-radius: 20px 20px 0 0;
+          height: 213.35px;
+          overflow: hidden;
+        }
+
+        &-info {
+          @include flex-row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 5%;
+          padding-right: 5%;
+          padding-bottom: 5%;
+          background-color: $colour-white;
+          border-radius: 0 0 20px 20px;
+          border: 1px solid $colour-white;
+
+          &__title {
+            @include flex-column;
+            position: relative;
+
+            > p {
+              position: absolute;
+              top: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    @include flex-column;
+    background-color: $colour-white;
+    width: 100%;
+    margin: auto;
+    > h2 {
+      padding-left: 5%;
+      font-weight: bold;
+    }
+    &-article {
+      @include flex-row;
+
+
+      &-card {
+        @include flex-column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        position: relative;
+
+        > a {
+          text-decoration: none;
+          color: transparent;
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        &__img {
+          border-radius: 20px 20px 0 0;
+          height: 213.35px;
+          max-width: 350px;
+          overflow: hidden;
+        }
+
+        &-info {
+          @include flex-row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 5%;
+          padding-right: 5%;
+          padding-bottom: 5%;
+          background-color: $colour-white;
+          border-radius: 0 0 20px 20px;
+          border: 1px solid $colour-white;
+
+          &__title {
+            @include flex-column;
+            position: relative;
+
+            > p {
+              position: absolute;
+              top: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

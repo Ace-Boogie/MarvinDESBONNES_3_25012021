@@ -1,0 +1,17 @@
+.button {
+  @include button;
+  @media (min-width: 992px)  {
+    padding: 1%;
+    border-radius: 20px;
+  }
+  &-margin {
+    width: 50%;
+    margin: 15% auto 5% auto;
+    text-align: center;
+    @media (min-width: 992px)  {
+      width: 20%;
+      margin: 5% auto 0 auto;
+      text-align: center;
+    }
+  }
+}
