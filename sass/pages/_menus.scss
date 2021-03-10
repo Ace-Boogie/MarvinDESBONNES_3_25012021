@@ -25,3 +25,10 @@ header > .menu-new {
 .menu-new::after {
   @include menu-new-after;
 }
+
+#card-menu-entree-menu-2 {
+  margin-top: 8%;
+}
+#card-menu-title_menu-2 {
+  margin-bottom: -6%;
+}
