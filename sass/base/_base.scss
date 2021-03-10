@@ -9,3 +9,28 @@ body {
     flex-direction: column;
   }
 }
+
+.transition-delay-1 {
+  animation: animation-delay 0.4s 1.5s linear both;
+}
+.transition-delay-2 {
+  opacity: 0;
+  animation: animation-delay 0.4s linear 1.7s both;
+}
+.transition-delay-3 {
+  //opacity: 0;
+  animation: animation-delay 0.4s linear 2s both;
+}
+
+@keyframes animation-delay {
+  from {
+    opacity: 0;
+  }
+  90% {
+    transform: scale(1.08);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

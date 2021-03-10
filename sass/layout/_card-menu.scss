@@ -71,8 +71,8 @@
   }
 
   @media (min-width: 992px) {
-    @include flex-column;
-    justify-content: center;
+    @include flex-row;
+    flex-wrap: wrap;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -89,6 +89,7 @@
       justify-content: space-between;
       margin-left: 4%;
       margin-right: 4%;
+      width: 100%;
       > h2 {
         font-family: $font-logo;
       }
@@ -97,19 +98,19 @@
     &-entrees {
       @include articles-entrees-plats-desserts;
       > h3 {
-        width: 5%;
+        width: 6%;
       }
     }
     &-plats {
       @include articles-entrees-plats-desserts;
       > h3 {
-        width: 5%;
+        width: 6%;
       }
     }
     &-desserts {
       @include articles-entrees-plats-desserts;
       > h3 {
-        width: 5%;
+        width: 6%;
       }
     }
   }

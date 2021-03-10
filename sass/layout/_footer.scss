@@ -58,7 +58,7 @@
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1366px) {
     @include flex-column;
     align-content: flex-start;
     height: 100%;
@@ -77,6 +77,36 @@
     &__link {
       margin: 1%;
       padding-left: 7%;
+
+      > a {
+        text-decoration: none;
+        color: $colour-white;
+
+        > i {
+          width: 30px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1367px) {
+    @include flex-column;
+    align-content: flex-start;
+    height: 100%;
+    background-color: $colour-bgc-footer;
+    color: $colour-white;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    &__logo {
+      padding-left: 5%;
+      > a {
+        text-decoration: none;
+        color: $colour-white;
+      }
+    }
+    &__link {
+      margin: 1%;
+      padding-left: 4%;
 
       > a {
         text-decoration: none;

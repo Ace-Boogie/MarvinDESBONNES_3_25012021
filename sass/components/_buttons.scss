@@ -1,12 +1,16 @@
 .button {
   @include button;
+  margin: 5% auto 0 auto;
   @media (min-width: 992px)  {
-    padding: 3%;
+    max-width: 300px;
+    max-height: 40px;
+    padding: 2%;
     border-radius: 20px;
+    transition: 0.4s ease-in-out;
     &:hover {
-      background: linear-gradient($colour-primary, $colour-secondary);
-      transform: scale(1.15);
-      transition: 0.4s ease-in-out;
+      filter: brightness(1.2);
+      transform: scale(1.08);
+      box-shadow: 0 0 15px 0;
     }
   }
   &-margin {
@@ -15,8 +19,13 @@
     text-align: center;
     @media (min-width: 992px)  {
       width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 5% auto 0 auto;
-      text-align: center;
+    }
+    @media (min-width: 1367px)  {
+      width: 15%;
     }
   }
 }

@@ -112,7 +112,7 @@
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1366px) {
     @include flex-column;
     width: 100%;
     margin: auto;
@@ -171,4 +171,62 @@
     }
   }
 
+  @media (min-width: 1367px) {
+    @include flex-column;
+    width: 100%;
+    margin: auto;
+    > h2 {
+      padding-left: 5%;
+    }
+    &-container {
+      @include flex-row;
+      justify-content: space-between;
+      width: 100%;
+      margin: auto;
+
+      &__click {
+        @include flex-row;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px $colour-bgc solid;
+        border-radius: 25px;
+        padding: 1%;
+        margin-top: 5%;
+        background-color: $colour-bgc;
+        font-weight: bold;
+        position: relative;
+        width: 50%;
+        margin-right: 3%;
+        margin-left: 3%;
+        &::before {
+          background-color: $colour-primary;
+          font-size: 15px;
+          color: $colour-white;
+          position: absolute;
+          border-radius: 60px;
+          padding: 0.2em 0.55em;
+          left: -2%;
+        }
+        &-number-1::before {
+          content: '1';
+        }
+        &-number-2::before {
+          content: '2';
+        }
+        &-number-3::before {
+          content: '3';
+        }
+        > i {
+          color: gray;
+          margin: 0 10%;
+        }
+        &:last-child > i {
+          color: $colour-primary;
+        }
+      }
+    }
+    &-container:nth-last-child(-n+2) {
+      margin-bottom: 5%;
+    }
+  }
 }

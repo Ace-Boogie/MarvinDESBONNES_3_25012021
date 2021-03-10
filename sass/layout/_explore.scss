@@ -51,11 +51,37 @@
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1366px) {
     @include flex-column;
     flex-wrap: wrap;
     background-color: $colour-bgc;
     padding-bottom: 15%;
+    width: 100%;
+    margin: auto;
+    &__map {
+      @include flex-row;
+      justify-content: center;
+      align-items: center;
+      background-color: #ededed;
+      border-top: 0.1rem #dbdbdb solid;
+      font-weight: bold;
+      > i {
+        padding-right: 20px;
+      }
+    }
+    &-search {
+      @include flex-column;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  @media (min-width: 1367px) {
+    @include flex-column;
+    flex-wrap: wrap;
+    background-color: $colour-bgc;
+    padding-bottom: 3%;
     width: 100%;
     margin: auto;
     &__map {

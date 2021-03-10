@@ -1,4 +1,5 @@
 .restaurant {
+  overflow: hidden;
   @media (max-width: 767px) {
     @include flex-column;
     padding-top: 15%;
@@ -130,7 +131,7 @@
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1366px) {
     @include flex-column;
     background-color: $colour-white;
     width: 100%;
@@ -195,4 +196,72 @@
     }
   }
 
+  @media (min-width: 1367px) {
+    @include flex-row;
+    background-color: $colour-white;
+    width: 100%;
+    > h2 {
+      padding-left: 5%;
+      font-weight: bold;
+    }
+    &-article {
+      @include flex-row;
+      margin: 8% -7% auto -13%;
+
+
+      &-card {
+        @include flex-column;
+        justify-content: center;
+        margin-left: 1%;
+        margin-right: 5%;
+        margin-bottom: 10%;
+        position: relative;
+
+        > a {
+          text-decoration: none;
+          color: transparent;
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        &__img {
+          border-radius: 20px 20px 0 0;
+          height: 213.35px;
+          max-width: 350px;
+          overflow: hidden;
+        }
+
+        &-info {
+          @include flex-row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 5%;
+          padding-right: 5%;
+          padding-bottom: 5%;
+          background-color: $colour-white;
+          border-radius: 0 0 20px 20px;
+          border: 1px solid $colour-white;
+
+          &__title {
+            @include flex-column;
+            position: relative;
+
+            > p {
+              position: absolute;
+              top: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#restaurant-article-2 {
+  margin-left: 11%;
 }

@@ -50,11 +50,19 @@
       width: 66%;
       margin: auto;
     }
-    @media (min-width: 992px) {
+    @media (min-width: 992px) and (max-width: 1366px) {
       border-radius: 60%;
       height: 580px;
       object-fit: cover;
       width: 66%;
+      margin: auto;
+    }
+
+    @media (min-width: 1367px) {
+      border-radius: 60%;
+      height: 580px;
+      object-fit: cover;
+      width: 55%;
       margin: auto;
     }
   }
