@@ -112,7 +112,7 @@
     }
   }
 
-  @media (min-width: 992px) and (max-width: 1366px) {
+  @media (min-width: 992px) and (max-width: 1499px) {
     @include flex-column;
     width: 100%;
     margin: auto;
@@ -131,7 +131,7 @@
         align-items: center;
         border: 1px $colour-bgc solid;
         border-radius: 25px;
-        padding: 2%;
+        padding: 1%;
         margin-top: 5%;
         background-color: $colour-bgc;
         font-weight: bold;
@@ -171,7 +171,7 @@
     }
   }
 
-  @media (min-width: 1367px) {
+  @media (min-width: 1500px) {
     @include flex-column;
     width: 100%;
     margin: auto;

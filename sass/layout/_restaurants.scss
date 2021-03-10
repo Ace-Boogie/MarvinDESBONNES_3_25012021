@@ -131,7 +131,7 @@
     }
   }
 
-  @media (min-width: 992px) and (max-width: 1366px) {
+  @media (min-width: 992px) and (max-width: 1499px) {
     @include flex-column;
     background-color: $colour-white;
     width: 100%;
@@ -196,7 +196,7 @@
     }
   }
 
-  @media (min-width: 1367px) {
+  @media (min-width: 1500px) {
     @include flex-row;
     background-color: $colour-white;
     width: 100%;
@@ -205,17 +205,28 @@
       font-weight: bold;
     }
     &-article {
-      @include flex-row;
-      margin: 8% -7% auto -13%;
+      @media (min-width: 1500px) {
+        @include flex-row;
+        margin: auto;
+        margin-left: 2%;
+      }
+      @media (min-width: 1567px) {
+        @include flex-row;
+        margin: auto;
+        //margin-left: 2%;
+        margin-right: 18%;
+      }
 
 
       &-card {
         @include flex-column;
         justify-content: center;
         margin-left: 1%;
-        margin-right: 5%;
+        margin-right: 2%;
         margin-bottom: 10%;
+        margin-top: 14%;
         position: relative;
+        //left: -7%;
 
         > a {
           text-decoration: none;
@@ -263,5 +274,16 @@
 }
 
 #restaurant-article-2 {
-  margin-left: 11%;
+  @media (min-width: 1500px) and (max-width: 1565px) {
+    margin-left: -10%;
+    margin-right: 2%;
+  }
+  @media (min-width: 1566px) and (max-width: 1766px){
+    margin-right: 2%;
+    margin-left: -5%;
+  }
+  @media (min-width: 1767px) {
+    margin-left: -8%;
+    margin-right: 2%;
+  }
 }
