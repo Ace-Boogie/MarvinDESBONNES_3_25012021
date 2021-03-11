@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   position: relative;
   align-items: center;
-  //width: 100%;
   @media (min-width: 768px) and (max-width: 991px) {
     @include flex-column;
   }
@@ -50,7 +49,7 @@
       width: 66%;
       margin: auto;
     }
-    @media (min-width: 992px) and (max-width: 1366px) {
+    @media (min-width: 992px) and (max-width: 1370px) {
       border-radius: 60%;
       height: 580px;
       object-fit: cover;
@@ -58,7 +57,7 @@
       margin: auto;
     }
 
-    @media (min-width: 1367px) {
+    @media (min-width: 1371px) {
       border-radius: 60%;
       height: 580px;
       object-fit: cover;
