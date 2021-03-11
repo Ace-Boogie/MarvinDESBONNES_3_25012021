@@ -103,8 +103,11 @@
 
 @mixin articles-entrees-plats-desserts {
   @include flex-column;
-  width: 30%;
+  width: 100%;
   margin: auto 1%;
+  @media (min-width: 992px){
+    width: 30%;
+  }
 
   > h3 {
     @include underline-h3;
