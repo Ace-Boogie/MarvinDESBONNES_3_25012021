@@ -58,7 +58,7 @@
     }
   }
 
-  @media (min-width: 992px) and (max-width: 1366px) {
+  @media (min-width: 992px) and (max-width: 1370px) {
     @include flex-column;
     align-content: flex-start;
     height: 100%;
@@ -88,7 +88,7 @@
       }
     }
   }
-  @media (min-width: 1367px) {
+  @media (min-width: 1371px) {
     @include flex-column;
     align-content: flex-start;
     height: 100%;
